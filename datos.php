@@ -13,11 +13,9 @@
   <body>
   <div class="container">
   <div class="row align-items-start">
+  <h1>Informacion de Pago</h1>
+    
     <div class="col">
-      
-    </div>
-    <div class="col">
-                <h1>Informacion de Pago</h1>
                 <form action="pago.php" method="post">
                             Tipo: <select name="companyType" class="form-select" aria-label="Default select example">
                                             <option value="">Seleccionar una opcion</option>
@@ -31,24 +29,26 @@
                                             <option value="02">RUC, Pasaporte</option>
                                             <option value="03">PID del exterior</option>
                             </select>
+                            </div>
+                            <div class="col">
                             Nombres: <input class="form-control" type="text" name="fullName"><br>
                             Direccion: <input class="form-control" type="text" name="address"><br>
                             Celular: <input class="form-control" type="text" name="mobile"><br>
                             Email: <input class="form-control" type="email" name="email"><br>
                             Descripcion: <input class="form-control" type="text" name="description"><br>
-                            
+                            </div>
+                            <div class="col">
                             Tipo De Pago: <select name="gateway" class="form-select" aria-label="Default select example">
                                             <option value="">Seleccionar una opcion</option>
                                             <option value="1">Alignet</option>
                                             <option value="2">Payphone</option>
                                             <option value="3">Datafast</option>
                                             <option value="4">Paymentez</option>
-                            <input type="submit" value="Enviar">
+                                            
+                            <input class="btn btn-success mt-2" type="submit" value="Enviar">
                 </form>
     </div>
-    <div class="col">
-      
-    </div>
+   
   </div>
   </div>
     
